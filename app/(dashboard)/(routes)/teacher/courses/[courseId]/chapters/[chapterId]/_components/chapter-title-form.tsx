@@ -48,7 +48,7 @@ export const ChapterTitleForm = ({
             toggleEdit();
             router.refresh();
         } catch {
-            toast.error("Something went wrong")
+            toast.error("Something went wrong in title")
         }
 
     }
