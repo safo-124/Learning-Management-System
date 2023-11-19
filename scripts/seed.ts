@@ -13,6 +13,10 @@ async function main() {
         { name: "Biology" },
         { name: "Sociology" },
         { name: "Economics" },
+        { name: "Music" },
+        { name: "Geography" },
+        { name: "History" },
+        { name: "Business" },
       ]
     });
 
