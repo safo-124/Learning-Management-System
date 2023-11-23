@@ -3,13 +3,14 @@
 import { Category } from "@prisma/client";
 import {FcEngineering, FcMultipleDevices, FcMusic, FcSalesPerformance, } from "react-icons/fc"
 import { SlChemistry } from "react-icons/sl";
-import { FaSunPlantWilt } from "react-icons/fa6";
-import { GiHumanPyramid } from "react-icons/gi";
-import { MdDataExploration } from "react-icons/md";
+import { FaMountainSun, FaSunPlantWilt } from "react-icons/fa6";
+import { GiGreatPyramid, GiHumanPyramid } from "react-icons/gi";
+import { MdDataExploration, MdPsychology } from "react-icons/md";
 import { MdOutlineComputer } from "react-icons/md";
 import { TbMathIntegrals } from "react-icons/tb";
 import {IconType} from "react-icons"
 import { CaategoryItem } from "./category-item";
+
 
 interface CategoriesProps {
     items: Category[];
@@ -19,11 +20,14 @@ const iconMap: Record<Category["name"], IconType> = {
     "Computer Science":   FcMultipleDevices,
     "Physics": FcEngineering,
     "Chemistry": SlChemistry,
-    "Sociology": GiHumanPyramid,
+    "Sociology": MdPsychology,
     "Pure Mathematics": TbMathIntegrals,
     "Biology":  FaSunPlantWilt,
-    "Economics": FcSalesPerformance,
-    "Music": FcMusic
+    "Economics": MdDataExploration,
+    "Music": FcMusic,
+    "Geography": FaMountainSun,
+    "Business": FcSalesPerformance,
+    "History": GiGreatPyramid
 }
 
 export const Categories = ({

@@ -16,7 +16,8 @@ async function main() {
         { name: "Music" },
         { name: "Geography" },
         { name: "History" },
-        { name: "Business" },
+        { name: "Business" },  
+        { name: "French" },  
       ]
     });
 
